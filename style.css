@@ -1,7 +1,7 @@
 .conteiner{
     position: relative;
     width: 100vw;
-    height: 95vh;
+    height: 97vh;
     background: #f3f5fc;
 }
 
@@ -30,6 +30,34 @@
 .texto:active {
     border: none;
     outline: none;
+}
+
+.botonCopiar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 48.5%;
+    top: 75%;
+    width: 30%;
+}
+
+.btn-copiar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-copiar:hover{
+    width: 25.5%;
 }
 
 .terminos{
@@ -132,7 +160,7 @@
     gap:16px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 70%;
     text-align: center;
 }
 
@@ -151,7 +179,7 @@
     width: 80%;
     font-family: "Inter";
     font-style: normal;
-    font-weight: 400;
+    font-weight:700;
     font-size: 14px;
     line-height: 150%;
     text-align: center;
@@ -164,6 +192,16 @@
     top: 15%;
     
 }
+
+.footer{
+    background: #f3f5fc;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
 
 @media (max-width: 57.5em) {
     .conteiner {
