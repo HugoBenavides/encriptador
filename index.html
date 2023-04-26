@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale:1.0">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <title>Encriptador de Texto</title>
     </head>
@@ -11,13 +12,20 @@
     <body>
 
         <div class="conteiner"><!-CONTIENE CAJA DE TEXTO PARA ENCRIPTAR->
-            <h1>Hola</h1>
             <div class="encriptar">
-                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Tu texto aquí. Nadie conocerá tus secretos"></textarea>
+                <textarea 
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                cols="30" 
+                rows="10" 
+                placeholder="Ingresa tu texto aquí: Tus secretos estarán a salvo :P" ></textarea>
+                
+                
             </div>
 
             <div class="terminos"><!-CONDICIONES PARA ENCRIPTAR->
-                <p>Sólo letrás minúsculas y sin acentos</p>
+                <p>Sólo letras minúsculas y sin acentos</p>
             </div>
 
             <div class="botones"><!-BOTNES DE ACCION PARA ENCRIPTADO/DESENCRIPTADO->
@@ -27,11 +35,16 @@
         </div>
 
         <div class="encriptado"><!-CAJA DE TEXTO ENCRIPTADO->
-            <img src="" alt="" id="imgEncriptado">
+            <img src="index/muneco.png" alt="muneco" id="imgEncriptado">
             <div class="mensajeEncriptado" id="mensajeEncriptado">
                 <h2 id="tituloMensaje">Ningun mensaje encriptado...aún</h2>
-                <p id="parrafo">Ingresa el texto para desencriptar...Conocerán tus secretos</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" ></textarea>
+                <p id="parrafo">Ingresa el texto de tus secretos</p>
+                <!--<textarea name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                class="mensaje" >
+                </textarea>-->
             </div>
         </div>
 
@@ -40,6 +53,6 @@
     <script src="index.js"></script>
     
     <footer><!-FOOTER CON LOS CREDITOS DEL CREADOR->
-        <p class="footer">Creado por Hugo Beanvides Doñan para Oracle One Next Education Grupo G5</p>
+        <p class="footer">Creado por Hugo Benavides Doñan para Oracle One Next Education Grupo G5</p>
     </footer>
 </html>
