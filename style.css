@@ -1,29 +1,82 @@
+.body{
+    background:#0e1538 ;
+}
+
+
 .conteiner{
     position: relative;
     width: 100vw;
     height: 97vh;
-    background: #f3f5fc;
+    background: #0e1538;
+}
+
+#alura{
+    position: relative;
+    width: 05%;
+    left: 12.2%;
+    top: 3%;
 }
 
 
-.texto{
+.encriptar{
     position: absolute;
     width: 42%;
     height: 60%;
     left: 12%;
     top: 15%;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.encriptar::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 230%;
+    top: -60%;
+    left: 40%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animate 15s linear infinite;
+
+}
+
+
+@keyframes animate {
+
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(350deg);
+    }
+}
+
+
+.texto{
+    position: absolute;
+    width: 97.5%;
+    height: 97.5%;
+    left: 1%;
+    top: 1%;
     border: none;
-    font-family: "Inter";
+    font-family: "Consolas";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    background-color: #f3f5fc;
+    border-radius: 16px;
+    color: #ffffff;
+    background-color: #0e1538;
 
 }
 
+
 .texto::placeholder{
-    color: #0a3871;
+    color: #c9ccd1;
 }
 
 .texto:focus,
@@ -46,18 +99,26 @@
     align-items: center;
     justify-content: center;
     padding: 2%;
-    width: 25%;
+    width: 25.5%;
     background-color: #0a3871;
+    border: 1px solid #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
+    font-family: "Consolas";
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: #ffffff;
+    color: #03e9f4;
 }
 
 .btn-copiar:hover{
-    width: 25.5%;
+    border: none;
+    font-weight: 700;
+    background: #f350df;
+    color: #050801;
+    box-shadow: 0 0 5px #f350df,
+                0 0 25px #f350df,
+                0 0 50px #f350df,
+                0 0 200px #f350df;
 }
 
 .terminos{
@@ -74,12 +135,12 @@
 }
 
 .terminos p {
-    font-family: "Inter";
+    font-family: "Consolas";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    color: #495057;
+    color: #c9ccd1;
     opacity: 0.8;
     flex: none;
     order: 1;
@@ -104,13 +165,15 @@
     gap: 8px;
     width: 25%;
     background-color: #0a3871;
+    border: 1px solid #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
-    font-size: 18px;
+    font-family: "Consolas";
+    font-size: 24px;
     line-height: 19px;
     text-align: center;
-    color: #ffffff;
+    color: #03e9f4;
     margin: 0 25px 0 0;
+    text-transform: uppercase;
 }
 
 .btn-desencriptar{
@@ -122,21 +185,40 @@
     padding: 2%;
     gap: 8px;
     width: 25%;
-    background: #d8dfe8;
+    color: #03e9f4;
+    background: #0a3871;
     border: 1px solid #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
+    font-family: "Consolas";
     font-weight: 400; 
-    font-size: 18px;
+    font-size: 24px;
     line-height: 19px;
     text-align: center;
-    color-interpolation-filters: #0a3871;
+    /*color-interpolation-filters: #0a3871;*/
 }
 
-.btn-encriptar:hover,
+.btn-encriptar:hover{
+    border: none;
+    font-weight: 700;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+
+}
 .btn-desencriptar:hover{
-    width: 24.5%;
-    padding: 1.8%;
+    /*width: 24.5%;
+    padding: 1.8%;*/
+    border: none;
+    font-weight: 700;
+    background: #03f490;
+    color: #050801;
+    box-shadow: 0 0 5px #03f490,
+                0 0 25px #03f490,
+                0 0 50px #03f490,
+                0 0 200px #03f490;
 }
 .encriptado{
     display: flex;
@@ -147,7 +229,7 @@
     left: 60%;
     top: 5%;
     background: #ffffff;
-    box-shadow: 0px 24px 32px -8px rgba(0,0,0, 0.80);
+    box-shadow: 0 0 50px #f350df;
     border-radius: 32px;
 }
 
@@ -166,10 +248,10 @@
 
 .mensajeEncriptado h2{
     width: 60%;
-    font-family: "Inter";
+    font-family: "Consolas";
     font-style: normal;
     font-weight: 700;
-    font-size: 24pX;
+    font-size: 30pX;
     line-height: 120%;
     color: #343a40;
     justify-content: center;
@@ -177,10 +259,10 @@
 
 .mensajeEncriptado p{
     width: 80%;
-    font-family: "Inter";
+    font-family: "Consolas";
     font-style: normal;
     font-weight:700;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 150%;
     text-align: center;
     color: #495057;
@@ -194,11 +276,12 @@
 }
 
 .footer{
-    background: #f3f5fc;
-    font-family: "Inter";
+    background: #0e1538;
+    font-family: "Consolas";
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+    color: #ffffff;
 }
 
 
